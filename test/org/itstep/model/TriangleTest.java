@@ -8,9 +8,10 @@ class TriangleTest {
 
     @Test
     void getArea() {
-        Circle circle = new Circle();
-        circle.setRadius(10);
-        double testData = circle.getArea();
-        Assertions.assertEquals(314.1592, testData, 0.0001);
+        Triangle triangle = new Triangle();
+        triangle.setBase(10);
+        triangle.setHeight(16);
+        Assertions.assertEquals(80,triangle.getArea());
+//
         }
     }
