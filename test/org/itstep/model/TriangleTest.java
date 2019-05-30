@@ -12,6 +12,5 @@ class TriangleTest {
         triangle.setBase(10);
         triangle.setHeight(16);
         Assertions.assertEquals(80,triangle.getArea());
-//
         }
     }
