@@ -38,7 +38,11 @@ public class ApplicationRunner {
         System.out.println("Size of list is " + shapeList.size());
 
         Set<Shape> shapeSet = new HashSet<>(shapeList);
-
+        shapeSet.add(circle);
+        shapeSet.add(triangle);
+        shapeSet.add(square);
+        shapeSet.add(circle);
+        
         System.out.println("Size of set is " + shapeSet.size());
     }
 }
