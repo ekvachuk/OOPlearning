@@ -17,7 +17,7 @@ class ListServiceTest {
     void getMaxShape() {
         Circle circle = new Circle(15);
         Triangle triangle = new Triangle(10, 8);
-        Square square = new Square(18);
+        Square square = new Square(40);
 
         List<Shape> shapeList = new ArrayList<>();
         shapeList.add(circle);
@@ -31,9 +31,9 @@ class ListServiceTest {
 
         assertNotNull(maxShape);
         assertEquals(maxShape.getClass().getSimpleName(), "Square");
-        assertEquals(maxShape.getArea(),100);
+        assertEquals(maxShape.getArea(),1600);
 
         Shape nullShape = ListService.getMaxShape(new ArrayList<>());
-        assertNotNull(nullShape);
+        assertNull(nullShape);
     }
 }
